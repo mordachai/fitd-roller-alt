@@ -52,9 +52,10 @@ async FitDRollerPopup() {
 
       <form>
         <div class="form-group">
-          <div class="form-group roll position">
-          <label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label>
-          <div class="rollRadio" id="dice">
+          <div class="form-group roll">
+          <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>
+
+          <div class="rollRadio2" id="dice">
             <input type="radio" id="0d" name="dice" value="0" />
             <label for="0d" class="diceNumber">0</label>
 
