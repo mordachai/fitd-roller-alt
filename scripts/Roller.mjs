@@ -15,80 +15,82 @@ export default class Roller {
     new Dialog({
       title: `${game.i18n.localize('FitDRoller.RollTitle')}`,
       content: `
+
       <form>
         <div class="form-group">
-        <section class="dice-matrix">        
-          <div id="thematrix">
-            <table>
-              <thead>
-                <tr>
-                  <th>Pos / Effect</th>
-                  <th><label>${game.i18n.localize('FitDRoller.EffectZero')}</label></th>
-                  <th><label>${game.i18n.localize('FitDRoller.EffectLimited')}</label></th>
-                  <th><label>${game.i18n.localize('FitDRoller.EffectStandard')}</label></th>
-                  <th><label>${game.i18n.localize('FitDRoller.EffectGreat')}</label></th>
-                  <th><label>${game.i18n.localize('FitDRoller.EffectExtreme')}</label></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
-                  <td><button class="rollButton" name="bt01" value="bt01"></td>
-                  <td><button type="button" name="bt02" value="bt02" class="rollButton"></td>
-                  <td><button type="button" name="bt03" value="bt03" class="rollButton"></td>
-                  <td><button type="button" name="bt04" value="bt04" class="rollButton"></td>
-                  <td><button type="button" name="bt05" value="bt05" class="rollButton"></td>
-                </tr>
+          <section class="dice-matrix">   
+            <div id="thematrix">
+              <table style="display: table;">
+                <thead>
+                  <tr>
+                    <th>Pos / Effect</th>
+                    <th><label>${game.i18n.localize('FitDRoller.EffectZero')}</label></th>
+                    <th><label>${game.i18n.localize('FitDRoller.EffectLimited')}</label></th>
+                    <th><label>${game.i18n.localize('FitDRoller.EffectStandard')}</label></th>
+                    <th><label>${game.i18n.localize('FitDRoller.EffectGreat')}</label></th>
+                    <th><label>${game.i18n.localize('FitDRoller.EffectExtreme')}</label></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
+                    <td><button type="button" name="bt01" value="bt01" class="rollButton"></td>
+                    <td><button type="button" name="bt02" value="bt02" class="rollButton"></td>
+                    <td><button type="button" name="bt03" value="bt03" class="rollButton"></td>
+                    <td><button type="button" name="bt04" value="bt04" class="rollButton"></td>
+                    <td><button type="button" name="bt05" value="bt05" class="rollButton"></td>
+                  </tr>
 
-                <tr>
-                  <td><label>${game.i18n.localize('FitDRoller.PositionRisky')}</label></td>
-                  <td><button type="button" name="bt06" value="bt06" class="rollButton"></td>
-                  <td><button type="button" name="bt07" value="bt07" class="rollButton"></td>
-                  <td><button type="button" name="bt08" value="bt08" class="rollButton"></td>
-                  <td><button type="button" name="bt09" value="bt09" class="rollButton"></td>
-                  <td><button type="button" name="bt10" value="bt10" class="rollButton"></td>
-                </tr>
+                  <tr>
+                    <td><label>${game.i18n.localize('FitDRoller.PositionRisky')}</label></td>
+                    <td><button type="button" name="bt06" value="bt06" class="rollButton"></td>
+                    <td><button type="button" name="bt07" value="bt07" class="rollButton"></td>
+                    <td><button type="button" name="bt08" value="bt08" class="rollButton"></td>
+                    <td><button type="button" name="bt09" value="bt09" class="rollButton"></td>
+                    <td><button type="button" name="bt10" value="bt10" class="rollButton"></td>
+                  </tr>
 
-                <tr>
-                  <td><label>${game.i18n.localize('FitDRoller.PositionDesperate')}</label></td>
-                  <td><button type="button" name="bt11" value="bt11" class="rollButton"></td>
-                  <td><button type="button" name="bt12" value="bt12" class="rollButton"></td>
-                  <td><button type="button" name="bt13" value="bt13" class="rollButton"></td>
-                  <td><button type="button" name="bt14" value="bt14" class="rollButton"></td>
-                  <td><button type="button" name="bt15" value="bt15" class="rollButton"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+                  <tr>
+                    <td><label>${game.i18n.localize('FitDRoller.PositionDesperate')}</label></td>
+                    <td><button type="button" name="bt11" value="bt11" class="rollButton"></td>
+                    <td><button type="button" name="bt12" value="bt12" class="rollButton"></td>
+                    <td><button type="button" name="bt13" value="bt13" class="rollButton"></td>
+                    <td><button type="button" name="bt14" value="bt14" class="rollButton"></td>
+                    <td><button type="button" name="bt15" value="bt15" class="rollButton"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-          <div class="form-group roll">
-          <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>
 
-          <div class="rollRadio2" id="numberOfDice">
-            <input type="radio" id="0d" name="dice" value="0" checked/>
-            <label for="0d" class="diceNumber bgRed">0</label>
+            <div class="form-group roll">
+              <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>
 
-            <input type="radio" id="1d" name="dice" value="1" />
-            <label for="1d" class="diceNumber">1</label>
+              <div class="rollRadio2" id="numberOfDice">
+                <input type="radio" id="0d" name="dice" value="0" checked/>
+                <label for="0d" class="diceNumber bgRed">0</label>
 
-            <input type="radio" id="2d" name="dice" value="2" />
-            <label for="2d" class="diceNumber">2</label>
+                <input type="radio" id="1d" name="dice" value="1" />
+                <label for="1d" class="diceNumber">1</label>
 
-            <input type="radio" id="3d" name="dice" value="3" />
-            <label for="3d" class="diceNumber">3</label>
+                <input type="radio" id="2d" name="dice" value="2" />
+                <label for="2d" class="diceNumber">2</label>
 
-            <input type="radio" id="4d" name="dice" value="4" />
-            <label for="4d" class="diceNumber">4</label>
+                <input type="radio" id="3d" name="dice" value="3" />
+                <label for="3d" class="diceNumber">3</label>
 
-            <input type="radio" id="5d" name="dice" value="5" />
-            <label for="5d" class="diceNumber">5</label>
+                <input type="radio" id="4d" name="dice" value="4" />
+                <label for="4d" class="diceNumber">4</label>
 
-            <input type="radio" id="6d" name="dice" value="6" />
-            <label for="6d" class="diceNumber">6</label>
-          </div>
-        </div>
+                <input type="radio" id="5d" name="dice" value="5" />
+                <label for="5d" class="diceNumber">5</label>
 
+                <input type="radio" id="6d" name="dice" value="6" />
+                <label for="6d" class="diceNumber">6</label>
+              </div>
+            </div>
+            </div>
+          </section>                
         </div>
       </form>
     `,

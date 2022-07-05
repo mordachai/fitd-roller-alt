@@ -227,26 +227,71 @@
 
 /*GUS*/
 
+.flex-container {
+  display: flex;
+  width: 100%;
+
+}
+
+.flex-container > div {
+  color: white;
+  width: calc(width/6);
+  margin: auto;
+  text-align: center;
+  line-height: 20px;
+  font-size: 30px;
+}
+
 .dice-matrix{
+  display: table;
   width: 100%;
   table-layout: fixed;
   text-align: center;
   vertical-align: middle;
+  padding: 0px;
+  margin: auto;
 }
+
 
 
 .rollButton {
-  background-image: url("../icons/d6.svg") no-repeat !important;
-  background-size: cover;
-  background-color: #04578f;
+  background: url('../icons/d6.svg') no-repeat;
+  background-size: 100%;
   opacity: 40%;
   width: 20px;
   height: 20px;
+  line-height: 20px;
   cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
 
 .rollButton:hover {
-opacity: 100%;
+  background-image: none;
+  background-color: #191813;
+  color: #eeefff;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  opacity: 100%;
+  font-size: small;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: filter 0.1s;
+  padding: 0px;
+}
+
+.rollButton:hover:after {
+  content: "Roll";
+  line-height: 20px;
+  padding: 0px;
+  margin: auto;
+
 }
 
 .diceNumber{
