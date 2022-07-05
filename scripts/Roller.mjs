@@ -19,8 +19,14 @@ export default class Roller {
       <form>
         <div class="form-group">
           <section class="dice-matrix">   
+<<<<<<< HEAD
             <div id="thematrix">
               <table style="display: table;">
+=======
+          
+            <div id="thematrix">
+              <table>
+>>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
                 <thead>
                   <tr>
                     <th>Pos / Effect</th>
@@ -34,7 +40,11 @@ export default class Roller {
                 <tbody>
                   <tr>
                     <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
+<<<<<<< HEAD
                     <td><button type="button" name="bt01" value="bt01" class="rollButton"></td>
+=======
+                    <td><button class="rollButton" name="bt01" value="bt01"></td>
+>>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
                     <td><button type="button" name="bt02" value="bt02" class="rollButton"></td>
                     <td><button type="button" name="bt03" value="bt03" class="rollButton"></td>
                     <td><button type="button" name="bt04" value="bt04" class="rollButton"></td>
@@ -62,6 +72,7 @@ export default class Roller {
               </table>
             </div>
 
+<<<<<<< HEAD
 
             <div class="form-group roll">
               <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>
@@ -90,6 +101,36 @@ export default class Roller {
               </div>
             </div>
             </div>
+=======
+            <div class="form-group roll">
+            <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>
+
+            <div class="rollRadio2" id="numberOfDice">
+              <input type="radio" id="0d" name="dice" value="0" checked/>
+              <label for="0d" class="diceNumber bgRed">0</label>
+
+              <input type="radio" id="1d" name="dice" value="1" />
+              <label for="1d" class="diceNumber">1</label>
+
+              <input type="radio" id="2d" name="dice" value="2" />
+              <label for="2d" class="diceNumber">2</label>
+
+              <input type="radio" id="3d" name="dice" value="3" />
+              <label for="3d" class="diceNumber">3</label>
+
+              <input type="radio" id="4d" name="dice" value="4" />
+              <label for="4d" class="diceNumber">4</label>
+
+              <input type="radio" id="5d" name="dice" value="5" />
+              <label for="5d" class="diceNumber">5</label>
+
+              <input type="radio" id="6d" name="dice" value="6" />
+              <label for="6d" class="diceNumber">6</label>
+            </div>
+          </div>
+        
+        
+>>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
           </section>                
         </div>
       </form>

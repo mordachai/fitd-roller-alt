@@ -252,11 +252,18 @@
   margin: auto;
 }
 
+<<<<<<< HEAD
 
 
 .rollButton {
   background: url('../icons/d6.svg') no-repeat;
   background-size: 100%;
+=======
+.rollButton {
+  background-image: url("../icons/d6.svg") !important;
+  background-size: cover;
+  background-color: #04578f;
+>>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
   opacity: 40%;
   width: 20px;
   height: 20px;
@@ -268,6 +275,7 @@
 }
 
 .rollButton:hover {
+<<<<<<< HEAD
   background-image: none;
   background-color: #191813;
   color: #eeefff;
@@ -292,6 +300,9 @@
   padding: 0px;
   margin: auto;
 
+=======
+  opacity: 100%;
+>>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
 }
 
 .diceNumber{
