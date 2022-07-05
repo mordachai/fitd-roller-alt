@@ -9,15 +9,12 @@ export default class Roller {
   }
 
   async FitDRollerPopup() {
-
     const maxDice = game.settings.get(this.moduleName, "maxDiceCount");
     const defaultDice = game.settings.get(this.moduleName, "defaultDiceCount") + 1;
 
     new Dialog({
       title: `${game.i18n.localize('FitDRoller.RollTitle')}`,
       content: `
-      <h2>${game.i18n.localize('FitDRoller.Roll')}</h2>
-
       <div class="table">
         <table>
           <thead>
@@ -33,29 +30,29 @@ export default class Roller {
           <tbody>
             <tr>
               <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt01" value="bt01"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt02" value="bt02"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt03" value="bt03"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt04" value="bt04"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt05" value="bt05"></div></td>
             </tr>
             
             <tr>
               <td><label>${game.i18n.localize('FitDRoller.PositionRisky')}</label></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt06" value="bt06"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt07" value="bt07"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt08" value="bt08"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt09" value="bt09"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt10" value="bt10"></div></td>
             </tr>
 
             <tr>
               <td><label>${game.i18n.localize('FitDRoller.PositionDesperate')}</label></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
-              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt11" value="bt11"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt12" value="bt12"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt13" value="bt13"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt14" value="bt14"></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="bt15" value="bt15"></div></td>
             </tr>
           </tbody>
         </table>
@@ -90,33 +87,45 @@ export default class Roller {
           </div>
         </div>
 
-          <script>$('#dice option[value="' + game.settings.get(this.moduleName, "defaultDiceCount") + '"]').prop("selected", "selected");</script>
-          <script>$('#pos option[value="' + game.settings.get(this.moduleName, "defaultPosition") + '"]').prop("selected", "selected");</script>
-          <script>$('#fx option[value="' + game.settings.get(this.moduleName, "defaultEffect") + '"]').prop("selected", "selected");</script>
+          <script>$('#dice option[value="' + game.settings.get("fitd-roller-alt", "defaultDiceCount") + '"]').prop("selected", "selected");</script>
+          <script>$('#pos option[value="' + game.settings.get("fitd-roller-alt", "defaultPosition") + '"]').prop("selected", "selected");</script>
+          <script>$('#fx option[value="' + game.settings.get("fitd-roller-alt", "defaultEffect") + '"]').prop("selected", "selected");</script>
 
         </div>
       </form>
     `,
-      buttons: {
-        yes: {
-          icon: "<i class='fa-solid fa-clover'></i>",
-          label: game.i18n.localize('FitDRoller.FortuneRoll'),
-          callback: async (html) => {
-            const dice_amount = parseInt(html.find('[name="dice"]')[0].value);
-            const position = html.find('[name="pos"]')[0].value;
-            const effect = html.find('[name="fx"]')[0].value;
-            await this.FitDRoller("", dice_amount, position, effect);
-          }
-        },
-        no: {
-          icon: "<i class='fas fa-times'></i>",
-          label: game.i18n.localize('FitDRoller.Close'),
-        },
-      },
-      default: "yes",
+      buttons: {},
+      render: ([dialogContent]) => {        
+        dialogContent.querySelector(`input[name="bt01"`).addEventListener("input", (event) => {
+            const textInput = event.target;            
+            const form = textInput.closest("form");
+            console.log('-------------')
+              console.log(event)
+              console.log('-------------')
+              console.log(textInput)
+              console.log('-------------')
+              console.log(form)
+              console.log('-------------')
+
+  //          const target = form.querySelector('input[name="target"]').value;
+//            const result = form.querySelector('input[name="result"]').value;
+            
+          });
+          
+      // render end       
+      } 
     }).render(true);
   }
-
+/*
+  async getDialogData() {
+    callback: async (html) => {
+      const dice_amount = parseInt(html.find('[name="dice"]')[0].value);
+      const position = html.find('[name="pos"]')[0].value;
+      const effect = html.find('[name="fx"]')[0].value;
+      await this.FitDRoller("", dice_amount, position, effect);
+    }    
+  }
+  */
 
   /**
    * Roll Dice.
