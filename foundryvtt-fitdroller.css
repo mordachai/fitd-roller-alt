@@ -260,27 +260,42 @@ opacity: 100%;
 }
 
 .diceNumber{
-  background: url(icons/d6-black.svg) no-repeat;
-  background-size: 30px;
-  color: rgb(201, 201, 201);
+  background-color: #252525;
+  border-radius: 4px;
+  color: var(--almost_white);
   width: 30px;
   height: 30px;
   opacity: 40%;
   padding: 0px;
-  line-height: 28px;
   cursor: pointer;
   border: none;
   text-align: center;
   vertical-align: middle;
   font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
   font-size: large;
+  font-weight:normal;
+}
+
+.bgRed{
+  background-color: var(--red);
+}
+
+.bgBlue{
+  background-color: var(--holoblue);
 }
 
 .diceNumber input:checked + label{
   color: white;
   opacity: 100%;
+  outline: none;
+  box-shadow: 0 0 5px var(--red);
   text-decoration: none;
-  font-size: larger;
+  font-weight: 800;
+}
+
+.diceNumber input:hover, .diceNumber input:focus{
+  outline: none;
+  box-shadow: 0 5px var(--red);
 }
 
 .rollRadio2{
@@ -290,29 +305,36 @@ opacity: 100%;
 }
 
 * form .form-group.roll > * {
-  flex: 1;
-}
+   flex: 1;
+  } 
 
 * form .rollRadio2 input {
-display: none;
-}
+    display: none;
+  }
 
 * form .rollRadio2 label {
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-/* margin-right: 10px; */
-transition: filter 0.1s;
-cursor: pointer;
-}
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: filter 0.1s;
+    cursor: pointer;
+  }
 
 * form div.rollRadio2 {
-display: flex;
-}
+    display: flex;
+  }
 
 * form .rollRadio2 input:checked + label {
-color: #eeefff;
-font-size: larger;
-opacity: 100%;
+    color: #eeefff;
+    font-weight: 700;
+    opacity: 100%;
+  }
+
+* form .rollRadio2 input:hover + label {
+  color: #eeefff;
+  font-weight: 700;
+  opacity: 100%;
+  outline: none;
+  box-shadow: 0 0 6px var(--redmed);
 }

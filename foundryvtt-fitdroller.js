@@ -20,14 +20,18 @@ async FitDRollerPopup() {
           <thead>
             <tr>
               <th>Pos / Effect</th>
+              <th><label>${game.i18n.localize('FitDRoller.EffectZero')}</label></th>
               <th><label>${game.i18n.localize('FitDRoller.EffectLimited')}</label></th>
               <th><label>${game.i18n.localize('FitDRoller.EffectStandard')}</label></th>
               <th><label>${game.i18n.localize('FitDRoller.EffectGreat')}</label></th>
+              <th><label>${game.i18n.localize('FitDRoller.EffectExtreme')}</label></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
@@ -38,10 +42,14 @@ async FitDRollerPopup() {
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
             </tr>
 
             <tr>
               <td><label>${game.i18n.localize('FitDRoller.PositionDesperate')}</label></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
+              <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
               <td class="centered"><div class="rollButton"><INPUT type="submit" name="" value=""></div></td>
@@ -57,7 +65,7 @@ async FitDRollerPopup() {
 
           <div class="rollRadio2" id="dice">
             <input type="radio" id="0d" name="dice" value="0" />
-            <label for="0d" class="diceNumber">0</label>
+            <label for="0d" class="diceNumber bgRed">0</label>
 
             <input type="radio" id="1d" name="dice" value="1" />
             <label for="1d" class="diceNumber">1</label>
@@ -88,8 +96,8 @@ async FitDRollerPopup() {
     `,
     buttons: {
       yes: {
-        icon: "<i class='fas fa-check'></i>",
-        label: game.i18n.localize('FitDRoller.Roll'),
+        icon: "<i class='fa-solid fa-clover'></i>",
+        label: game.i18n.localize('FitDRoller.FortuneRoll'),
         callback: async (html) =>
         {
           const dice_amount = parseInt(html.find('[name="dice"]')[0].value);
