@@ -227,35 +227,25 @@
 
 /*GUS*/
 
-.table {
+.dice-matrix{
   width: 100%;
-  table-layout: fixed; /* optional, for equal spacing */
-  /* border-collapse: collapse; */
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.centered {
-    border: 1px rgb(0, 0, 190);
-    padding: 5px 10px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-th, td {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.rollButton button {
-  background: url(../icons/d6.svg) no-repeat;
+.rollButton {
+  background-image: url("../icons/d6.svg") no-repeat !important;
   background-size: 20px;
+  background-color: #04578f;
+  border-radius: 50%;
   opacity: 40%;
   width: 20px;
   height: 20px;
   cursor: pointer;
-  border: none;
 }
 
-.rollButton button:hover {
+.rollButton input:hover {
 opacity: 100%;
 }
 
