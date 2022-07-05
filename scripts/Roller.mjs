@@ -96,25 +96,31 @@ export default class Roller {
         html.addEventListener("click", ({ target }) => {
           if (!target.matches(".rollButton")) return;
           const currentForm = target.closest("form");
-          console.log(currentForm);
+
           const numberOfDice = parseInt(target.closest("form").querySelector("input[name='dice']:checked").value);
+          
+          // test
+          console.log('----------------');
           console.log(numberOfDice);
+          let position = 1;
+          let effect = 2;
+          switch('aaa') {
+            case 'a':
+              // code block
+              break;
+            case 'b':
+              // code block
+              break;
+            default:
+              // code block
+          }
+          this.FitDRoller("", numberOfDice, position, effect);          
         })
           
       // render end       
       } 
     }).render(true);
   }
-/*
-  async getDialogData() {
-    callback: async (html) => {
-      const dice_amount = parseInt(html.find('[name="dice"]')[0].value);
-      const position = html.find('[name="pos"]')[0].value;
-      const effect = html.find('[name="fx"]')[0].value;
-      await this.FitDRoller("", dice_amount, position, effect);
-    }    
-  }
-  */
 
   /**
    * Roll Dice.
@@ -216,7 +222,7 @@ export default class Roller {
         effect_localize = 'FitDRoller.EffectStandard';
     }
 
-    const result = await renderTemplate("modules/foundryvtt-fitdroller/templates/fitd-roll.html", {
+    const result = await renderTemplate("modules/" + this.moduleName + "/templates/fitd-roll.html", {
       rolls,
       roll_status,
       attribute,
