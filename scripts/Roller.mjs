@@ -60,6 +60,7 @@ export default class Roller {
               </tbody>
             </table>
           </div>
+        </section>
 
           <div class="form-group roll">
           <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>

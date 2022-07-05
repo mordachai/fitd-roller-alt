@@ -242,11 +242,10 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-               
 }
 
 .rollButton:hover {
-opacity: 100%;
+  opacity: 100%;
 }
 
 .diceNumber{
