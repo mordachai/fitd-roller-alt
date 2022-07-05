@@ -33,29 +33,29 @@ export default class Roller {
               <tbody>
                 <tr>
                   <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt01" value="bt01"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt02" value="bt02"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt03" value="bt03"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt04" value="bt04"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt05" value="bt05"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt01" value="bt01"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt02" value="bt02"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt03" value="bt03"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt04" value="bt04"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt05" value="bt05"></div></td>
                 </tr>
-                
+
                 <tr>
                   <td><label>${game.i18n.localize('FitDRoller.PositionRisky')}</label></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt06" value="bt06"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt07" value="bt07"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt08" value="bt08"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt09" value="bt09"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt10" value="bt10"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt06" value="bt06"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt07" value="bt07"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt08" value="bt08"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt09" value="bt09"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt10" value="bt10"></div></td>
                 </tr>
 
                 <tr>
                   <td><label>${game.i18n.localize('FitDRoller.PositionDesperate')}</label></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt11" value="bt11"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt12" value="bt12"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt13" value="bt13"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt14" value="bt14"></div></td>
-                  <td class="centered"><div class="rollButton"><INPUT type="button" name="bt15" value="bt15"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt11" value="bt11"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt12" value="bt12"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt13" value="bt13"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt14" value="bt14"></div></td>
+                  <td class="centered"><div class="rollButton"><button type="button" name="bt15" value="bt15"></div></td>
                 </tr>
               </tbody>
             </table>

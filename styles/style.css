@@ -245,7 +245,7 @@ th, td {
     vertical-align: middle;
 }
 
-.rollButton input {
+.rollButton button {
   background: url(../icons/d6.svg) no-repeat;
   background-size: 20px;
   opacity: 40%;
@@ -255,7 +255,7 @@ th, td {
   border: none;
 }
 
-.rollButton input:hover {
+.rollButton button:hover {
 opacity: 100%;
 }
 
