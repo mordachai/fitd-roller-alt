@@ -2,7 +2,7 @@
   "name": "fitd-roller-alt",
   "title": "Forged in the Dark - Roller",
   "description": "Provides a generic Dice Roller for Forged in the Dark games",
-  "authors": ["megastruktur", "Andrew Garinger (agaringer#6498)", "Gus", "Mestre Digital"],
+  "authors": ["Mestre Digital", "Gus"],
   "version": "1.0.0",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "10",

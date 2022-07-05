@@ -65,7 +65,7 @@ export default class Roller {
           <div><label>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</label></div>
 
           <div class="rollRadio2" id="numberOfDice">
-            <input type="radio" id="0d" name="dice" value="0" />
+            <input type="radio" id="0d" name="dice" value="0" checked/>
             <label for="0d" class="diceNumber bgRed">0</label>
 
             <input type="radio" id="1d" name="dice" value="1" />
@@ -93,28 +93,89 @@ export default class Roller {
     `,
       buttons: {},
       render: ([html]) => {     
-        html.addEventListener("click", ({ target }) => {
+        html.addEventListener("click", async ({ target }) => {
           if (!target.matches(".rollButton")) return;
           const currentForm = target.closest("form");
+          const buttonValue = target.closest("form").querySelector("button").value;
 
           const numberOfDice = parseInt(target.closest("form").querySelector("input[name='dice']:checked").value);
+
+          let position;
+          let effect;
+          switch(buttonValue) {
+            case 'bt01':
+              position = 'controlled';
+              effect = 'zero';
+              break;
+            case 'bt02':
+              position = 'controlled';
+              effect = 'limited';
+              break;
+            case 'bt03':
+              position = 'controlled';
+              effect = 'standard';
+              break;     
+            case 'bt04':
+              position = 'controlled';
+              effect = 'great';
+              break;  
+            case 'bt05':
+              position = 'controlled';
+              effect = 'extreme';
+              break;   
+            case 'bt06':
+              position = 'risky';
+              effect = 'zero';
+              break;
+            case 'bt07':
+              position = 'risky';
+              effect = 'limited';
+              break;
+            case 'bt08':
+              position = 'risky';
+              effect = 'standard';
+              break;     
+            case 'bt09':
+              position = 'risky';
+              effect = 'great';
+              break;  
+            case 'bt10':
+              position = 'risky';
+              effect = 'extreme';
+              break;    
+            case 'bt11':
+              position = 'desperate';
+              effect = 'zero';
+              break;
+            case 'bt12':
+              position = 'desperate';
+              effect = 'limited';
+              break;
+            case 'bt13':
+              position = 'desperate';
+              effect = 'standard';
+              break;     
+            case 'bt14':
+              position = 'desperate';
+              effect = 'great';
+              break;  
+            case 'bt15':
+              position = 'desperate';
+              effect = 'extreme';
+              break;               
+            default:
+              console.log("error 666!");
+          }
           
           // test
           console.log('----------------');
           console.log(numberOfDice);
-          let position = 1;
-          let effect = 2;
-          switch('aaa') {
-            case 'a':
-              // code block
-              break;
-            case 'b':
-              // code block
-              break;
-            default:
-              // code block
-          }
-          this.FitDRoller("", numberOfDice, position, effect);          
+          console.log( buttonValue);
+          console.log( position);
+          console.log( effect);
+          console.log('----------------');
+          
+          await this.FitDRoller("", numberOfDice, position, effect);          
         })
           
       // render end       
