@@ -1,14 +1,14 @@
 {
-  "name": "foundryvtt-fitdroller",
-  "title": "Forged in the Dark Roller",
+  "name": "fitd-roller-alt",
+  "title": "Forged in the Dark - Roller",
   "description": "Provides a generic Dice Roller for Forged in the Dark games",
-  "authors": ["megastruktur", "Andrew Garinger (agaringer#6498)", "Gus", "Bruno"],
+  "authors": ["megastruktur", "Andrew Garinger (agaringer#6498)", "Gus", "Mestre Digital"],
   "version": "1.0.0",
-  "minimumCoreVersion": "0.7.5",
-  "compatibleCoreVersion": "9.224",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "10",
 
-  "styles": ["foundryvtt-fitdroller.css"],
-  "esmodules": ["foundryvtt-fitdroller.js"],
+  "styles": ["styles/style.css"],
+  "esmodules": ["scripts/main.js"],
 
   "languages": [
     {
@@ -28,7 +28,6 @@
     }
   ],
   "url": "https://github.com/mordachai/fitd-roller-alt",
-  "manifest": "https://raw.githubusercontent.com/drewg13/foundryvtt-fitdroller/main/module.json",
-  "download": "https://github.com/drewg13/foundryvtt-fitdroller/archive/v1.5.3.zip",
-  "bugs": "https://github.com/drewg13/foundryvtt-fitdroller/issues"
+  "manifest": "https://raw.githubusercontent.com/mordachai/fitd-roller-alt/main/module.json",
+  "download": "https://codeload.github.com/mordachai/fitd-roller-alt/zip/main"
 }

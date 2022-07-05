@@ -218,11 +218,11 @@
   color: red;
 }
 * .dice-tooltip.fitd-die-tooltip .dice-rolls .roll.die.fitdd6.black {
-  background-image: url(icons/d6-black.svg) !important;
+  background-image: url(../icons/d6-black.svg) !important;
   color: var(--almost_white);
 }
 * .dice-tooltip.fitd-die-tooltip .dice-rolls .roll.die.fitdd6.gray {
-  background-image: url(icons/d6-grey.svg) !important;
+  background-image: url(../icons/d6-grey.svg) !important;
 }
 
 /*GUS*/
@@ -246,7 +246,7 @@ th, td {
 }
 
 .rollButton input {
-  background: url(icons/d6.svg) no-repeat;
+  background: url(../icons/d6.svg) no-repeat;
   background-size: 20px;
   opacity: 40%;
   width: 20px;
