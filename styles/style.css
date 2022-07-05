@@ -234,18 +234,18 @@
   vertical-align: middle;
 }
 
+
 .rollButton {
   background-image: url("../icons/d6.svg") no-repeat !important;
-  background-size: 20px;
+  background-size: cover;
   background-color: #04578f;
-  border-radius: 50%;
   opacity: 40%;
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.rollButton input:hover {
+.rollButton:hover {
 opacity: 100%;
 }
 

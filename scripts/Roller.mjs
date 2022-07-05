@@ -18,7 +18,7 @@ export default class Roller {
       <form>
         <div class="form-group">
         <section class="dice-matrix">        
-          <div>
+          <div id="thematrix">
             <table>
               <thead>
                 <tr>
@@ -33,7 +33,7 @@ export default class Roller {
               <tbody>
                 <tr>
                   <td><label>${game.i18n.localize('FitDRoller.PositionControlled')}</label></td>
-                  <td><button type="button" name="bt01" value="bt01" class="rollButton"></td>
+                  <td><button class="rollButton" name="bt01" value="bt01"></td>
                   <td><button type="button" name="bt02" value="bt02" class="rollButton"></td>
                   <td><button type="button" name="bt03" value="bt03" class="rollButton"></td>
                   <td><button type="button" name="bt04" value="bt04" class="rollButton"></td>
