@@ -1,6 +1,6 @@
 :root {
 	--almost_white: #eeefff;
-	--red: #ff0000;
+	--red: #d70000;
 	--holoblue: #33b5e5;
 	--holobluemed: #84d2ef;
 	--holobluelt: #ade1f4;
@@ -98,8 +98,8 @@
   height: 20px !important;
 }
 * .fitd-die-tooltip .chat-label-small-red {
-  background-color: red;
-  color: #191813;
+  background-color: var(--red);
+  color: var(--almost_white);
   font-size: small;
   text-align: center;
   padding: 3px 5px;
@@ -126,7 +126,7 @@
 * .fitd-die-tooltip .label-stripe-red {
   text-transform: uppercase;
   background-color: #191813;
-  color: red;
+  color: var(--red);
   margin-bottom: 10px;
   position: relative;
   padding-left: 10px;
@@ -166,8 +166,8 @@
 }
 * .fitd-die-tooltip .label-stripe-chat-small-red {
   text-transform: capitalize;
-  background-color: red;
-  color: #191813;
+  background-color: var(--red);
+  color: var(--almost_white);
   position: relative;
   padding-top: 3px;
   display: flex;
@@ -215,17 +215,31 @@
 * .fitd-die-tooltip .die.damaged,
 * .fitd-die-tooltip .die.poor,
 * .fitd-die-tooltip .die.failure {
-  color: red;
+  color: var(--red);
 }
 * .dice-tooltip.fitd-die-tooltip .dice-rolls .roll.die.fitdd6.black {
-  background-image: url(../icons/d6-black.svg) !important;
+  /* background-image: url(../icons/d6-black.svg) !important; */
+  background: var(--darkblue);
   color: var(--almost_white);
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  line-height: 24px;
+  margin-right: 5px;
 }
 * .dice-tooltip.fitd-die-tooltip .dice-rolls .roll.die.fitdd6.gray {
-  background-image: url(../icons/d6-grey.svg) !important;
+  /* background-image: url(../icons/d6-grey.svg) !important; */
+  background: #b0b0b0;
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  line-height: 24px;
+  margin-right: 5px;
 }
 
-/*GUS*/
+/*Alternative*/
 
 #rollMatrix {
   flex: 1;
