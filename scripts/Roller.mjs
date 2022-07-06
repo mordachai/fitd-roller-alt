@@ -93,9 +93,8 @@ export default class Roller {
           <td><button type="button" name="bt15" value="bt15" class="rollButton"></td>
         </tr>
       </table>
-
-
-    </form>      
+    </form>   
+       
     `,
       buttons: {},
       render: ([html]) => {     
