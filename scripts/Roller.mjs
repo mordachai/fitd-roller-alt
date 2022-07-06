@@ -278,12 +278,18 @@ export default class Roller {
 
     let effect_localize = '';
     switch (effect) {
+      case 'zero':
+        effect_localize = 'FitDRoller.EffectZero';
+        break;
       case 'limited':
         effect_localize = 'FitDRoller.EffectLimited';
         break;
       case 'great':
         effect_localize = 'FitDRoller.EffectGreat';
         break;
+      case 'extreme':
+          effect_localize = 'FitDRoller.EffectExtreme';
+        break;  
       case 'standard':
       default:
         effect_localize = 'FitDRoller.EffectStandard';

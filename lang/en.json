@@ -27,6 +27,14 @@
   "FitDRoller.RollSuccess": "Success",
   "FitDRoller.RollPartialSuccess": "Partial Success",
 
+
+
+
+
+
+
+
+
   "FitDRoller.RollDoWithIncreasedEffect": "You do it with <strong>increased effect</strong>.",
   "FitDRoller.RollDo": "You do it.",
   "FitDRoller.RollPartialSuccessPositionControlled": "You hesitate. Withdraw and try a different approach, or else do it with a minor consequence: a <strong>minor complication</strong> occurs, you have <strong>reduced effect</strong>, you suffer <strong>lesser harm</strong>, you end up in a <strong>risky</strong> position.",
@@ -39,6 +47,10 @@
   "FitDRoller.RollXP": "Mark <strong>XP</strong> for the related attribute.",
   "FitDRoller.RollZeromode": "Zero Dice rolled - rolling two dice and taking the lowest",
 
+  "FitDRoller.RollZeroEffect": "Zero Effect",
+  "FitDRoller.RollZeroEffectDescription": "You get a bad result or zero effect.<br><br>If this is an engagement roll, you start in a <strong>desperate</strong> position.<br>Good luck!<br><br>If you're marking faction or healing clocks, mark <strong>0</strong> segments.",
+  "FitDRoller.RollExtremeEffect": "Extreme Effect",
+  "FitDRoller.RollExtremeEffectDescription": "You get an exceptional result or an extreme effect.<br><br>If this is an engagement roll, you may have already overcome multiple obstacles and are in a <strong>controlled</strong> position for whatever is next.<br><br>If you're marking faction or healing clocks, mark <strong>5</strong> segments.",
   "FitDRoller.RollGreatEffect": "Great Effect",
   "FitDRoller.RollGreatEffectDescription": "You get an exceptional result or an extreme effect.<br><br>If this is an engagement roll, you've already overcome the first obstacle and are in a <strong>controlled</strong> position for whatever is next.<br><br>If you're marking faction or healing clocks, mark <strong>5</strong> segments.",
   "FitDRoller.RollStandardEffect": "Standard Effect",

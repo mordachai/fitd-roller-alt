@@ -37,7 +37,7 @@
   "FitDRoller.RollFailurePositionDesperate": "É o pior resultado.<ul><li>- você sofre <strong> danos graves</strong></li><li>- uma complicação séria</strong> ocorre </li><li>- você <strong> perde esta oportunidade</strong> de agir</li><ul>",
 
   "FitDRoller.RollXP": "Marque <strong> XP </strong> Para o atributo relacionado.",
-  "FitDRoller.RollZeromode": "Zero Dados rolados - rolando dois dados e pegando o mais baixo",
+  "FitDRoller.RollZeromode": "Zero atributos rolados - rolando dois dados e pegando o mais baixo",
 
   "FitDRoller.RollGreatEffect": "Efeito Excelente",
   "FitDRoller.RollGreatEffectDescription": "Você obtém um resultado excepcional ou um efeito extremo.<br><br>Se este for um teste de engajamento, você já deve ter superado vários obstáculos e está em uma <strong>posição controlada</strong> para o que vem a seguir.<br ><br>Se você estiver marcando relógios de facção ou de cura, marque <strong>5</strong> segmentos.",
@@ -49,6 +49,10 @@
   "FitDRoller.RollPoorEffectDescription": "Você obtém um resultado ruim ou pouco efeito.<br><br>Se este for um teste de engajamento, você começa em uma <strong>posição desesperada</strong>.<br>Boa sorte!<br><br>Se você está marcando relógios de facção ou de cura, marque <strong>1</strong> segmento.",
   "FitDRoller.RollZeroEffect": "Nenhum Efeito",
   "FitDRoller.RollZeroEffectDescription": "Você obtém um resultado ruim ou efeito zero.<br><br>Se for um teste de engajamento, você começa em uma <strong>posição desesperada</strong>.<br>Boa sorte!<br><br>Se você estiver marcando relógios de facção ou de cura, marque <strong>0</strong> segmentos.",
+  "FitDRoller.RollExtremeEffect": "Efeito extremo!",
+  "FitDRoller.RollExtremeEffectDescription": "Você obtém um resultado excepcional ou um efeito extremo.<br><br>Se este for um teste de engajamento, você já deve ter superado vários obstáculos e está em uma <strong>posição controlada</strong> para o que vem a seguir.<br ><br>Se você estiver marcando relógios de facção ou de cura, marque <strong>5</strong> segmentos.",
+ 
+
 
   "FitDRoller.maxDiceCountName": "Número máximo de dados em uma rolagem",
   "FitDRoller.maxDiceCountHint": "O número máximo de dados disponível no popup",
