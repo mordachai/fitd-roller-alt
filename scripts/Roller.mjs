@@ -50,11 +50,11 @@ export default class Roller {
       <table id="rollMatrix">
         <colgroup>
         <col class="first-col">
-        <col>
-        <col>
-        <col>
-        <col>
-        <col>
+        <col class="fx-col">
+        <col class="fx-col">
+        <col class="fx-col">
+        <col class="fx-col">
+        <col class="fx-col">
         </colgroup>
 
         <tr>
