@@ -227,43 +227,41 @@
 
 /*GUS*/
 
-.flex-container {
-  display: flex;
-  width: 100%;
-
-}
-
-.flex-container > div {
-  color: white;
-  width: calc(width/6);
-  margin: auto;
-  text-align: center;
-  line-height: 20px;
-  font-size: 30px;
-}
-
-.dice-matrix{
-  display: table;
+#rollMatrix {
+  flex: 1;
+  border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0px;
-  margin: auto;
 }
 
-<<<<<<< HEAD
 
+
+/* #rollMatrix td, #rollMatrix th {
+} */
+
+#rollMatrix td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#rollMatrix tr:nth-child(even){background-color: #c4c4c4cb;}
+
+#rollMatrix tr:hover {background-color: #ddd;}
+
+#rollMatrix th {
+  background-color: #191813;
+  color: var(--almost_white);
+  text-align: center;
+  vertical-align: middle;
+}
+.first-col{
+  font-size: smaller;
+  width: 20%;
+}
 
 .rollButton {
   background: url('../icons/d6.svg') no-repeat;
   background-size: 100%;
-=======
-.rollButton {
-  background-image: url("../icons/d6.svg") !important;
-  background-size: cover;
-  background-color: #04578f;
->>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
   opacity: 40%;
   width: 20px;
   height: 20px;
@@ -275,7 +273,6 @@
 }
 
 .rollButton:hover {
-<<<<<<< HEAD
   background-image: none;
   background-color: #191813;
   color: #eeefff;
@@ -300,9 +297,6 @@
   padding: 0px;
   margin: auto;
 
-=======
-  opacity: 100%;
->>>>>>> 707d43cfe2490c6af83d8d557556deadea6e6d7f
 }
 
 .diceNumber{
@@ -345,9 +339,9 @@
 }
 
 .rollRadio2{
-  flex: 1;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
+  gap: 6px;
+  margin: 0px;
 }
 
 * form .form-group.roll > * {
@@ -365,6 +359,7 @@
     user-select: none;
     transition: filter 0.1s;
     cursor: pointer;
+    padding: 0;
   }
 
 * form div.rollRadio2 {
