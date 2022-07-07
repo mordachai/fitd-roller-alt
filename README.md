@@ -9,10 +9,10 @@ Select the number of dice you want to roll (default is 2) and choose one of the 
 
 ![image](https://user-images.githubusercontent.com/662913/177671190-0cc656c2-f0ae-4881-8ffa-a6f63a79a4b9.png)
 
-# Transalation:
-- English
-- Spanish
-- Portuguese (Brazil)
+# Translations included:
+- en: English
+- es: Spanish
+- pt-br: Portuguese (Brazil)
 
 
 # TODO
