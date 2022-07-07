@@ -15,10 +15,9 @@ export default class Roller {
     new Dialog({
       title: `${game.i18n.localize('FitDRoller.RollTitle')}`,
       content: ` 
-
       
-
     <form>
+    
       <h3>${game.i18n.localize('FitDRoller.RollNumberOfDice')}:</h3>
       <div class="rollRadio2" id="numberOfDice">
         <input type="radio" id="0d" name="dice" value="0" />
@@ -93,16 +92,15 @@ export default class Roller {
           <td><button type="button" name="bt15" value="bt15" class="rollButton"></td>
         </tr>
       </table>
-    </form>   
-       
+      
+    </form>          
     `,
       buttons: {},
       render: ([html]) => {     
         html.addEventListener("click", async ({ target }) => {
           if (!target.matches(".rollButton")) return;
-          const currentForm = target.closest("form");
-          const buttonValue = target.closest("form").querySelector("button").value;
-
+          const buttonValue = target.value;
+          
           const numberOfDice = parseInt(target.closest("form").querySelector("input[name='dice']:checked").value);
 
           let position;
@@ -179,10 +177,10 @@ export default class Roller {
           console.log( position);
           console.log( effect);
           console.log('----------------');
-          
+
           await this.FitDRoller("", numberOfDice, position, effect);          
         })
-          
+
       // render end       
       } 
     }).render(true);
