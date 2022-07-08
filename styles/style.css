@@ -152,7 +152,8 @@
   position: relative;
   padding-top: 3px;
   display: flex;
-  /* font-weight: bold; */
+  font-family: "Major Guilty Latin";
+    /* font-weight: bold; */
   margin: 0;
 }
 * .fitd-die-tooltip .label-stripe-chat-small {
@@ -240,6 +241,11 @@
 }
 
 /*Alternative*/
+
+@font-face {
+  font-family: "Major Guilty Latin";
+  src: url(../fonts/major-guilty-latin.otf);
+}
 
 .svg-icon{
   -moz-osx-font-smoothing: grayscale;
