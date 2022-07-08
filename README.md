@@ -4,7 +4,7 @@ derivative version of the Forged in the Dark Roller module: https://foundryvtt.c
 # Usage:
 After install click on the last icon in the tools to open the roll panel
 
-![image](https://user-images.githubusercontent.com/662913/177671969-41c48c61-5317-4895-8cbc-4acdb631d88f.png)
+![image](https://user-images.githubusercontent.com/83596301/178025714-ea4c91de-03c8-4299-b3d4-0e2fa5d92e1e.png)
 
 Select the number of dice you want to roll (default is 2) and click in one of the buttons on the Position and Effects table to roll. The results and the outcome will be displayed in the chat window.
 
