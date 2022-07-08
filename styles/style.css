@@ -241,6 +241,13 @@
 
 /*Alternative*/
 
+.svg-icon{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor
+}
+
 #rollMatrix {
   flex: 1;
   border-collapse: collapse;
