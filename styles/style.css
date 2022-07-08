@@ -360,10 +360,10 @@
   background-color: var(--holoblue);
 }
 
-.fortune-roll{
+.fortune-roll {
   width: 55px;
-  height: 40px;
-  line-height: 1.3;
+  height: 50px;
+  line-height: 1.4;
   background-color: #04578f;
   border-radius: 5px;
   color: var(--almost_white);
@@ -377,11 +377,10 @@
   outline: none;
   box-shadow: none;
 }
-.fortune-roll:hover{
-  background-color: var(--redmed);
-  
-}
 
+.fortune-roll:hover{
+  background-color: var(--redmed); 
+}
 
 .diceNumber input:checked + label{
   color: white;
