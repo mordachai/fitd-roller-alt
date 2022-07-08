@@ -19,8 +19,6 @@ Select the number of dice you want to roll (default is 2) and click in one of th
 # TODO
 
 - remove id from radio main.js
-- add Handlebars for html in main.js: https://foundryvtt.com/api/v10/modules/client.html#renderTemplate
-- fix button behavior
 
 # Acknowledgements
 

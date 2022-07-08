@@ -65,5 +65,8 @@
   "FitDRoller.backgroundColorName": "Cor de Fundo do Dado",
   "FitDRoller.backgroundColorHint": "A cor de fundo dos resultados dos dados nas mensagens de chat",
   "FitDRoller.backgroundColorGray": "cinza",
-  "FitDRoller.backgroundColorBlack": "preto"
+  "FitDRoller.backgroundColorBlack": "preto",
+  
+  "FitDRoller.FitDRollerShortcutName": "FitD Roller",
+  "FitDRoller.FitDRollerShortcutHint": "This will trigger Forged in the Dark Roller."    
 }

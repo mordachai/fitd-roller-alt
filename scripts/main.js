@@ -77,6 +77,22 @@ Hooks.once("init", () => {
     },
     "default": "standard"
   });
+  
+  // --------------------------------------------------
+  // Keybinding
+  game.keybindings.register(moduleName, "FitDRollerShortcut", {
+    name: game.i18n.localize("FitDRoller.FitDRollerShortcutName"),
+    hint: game.i18n.localize("FitDRoller.FitDRollerShortcutHint"),
+    editable: [{ key: "KeyD", modifiers: []}],
+    onDown: async () => {
+      await game.fitdroller.FitDRollerPopup();
+    },
+    onUp: () => {},
+    restricted: false,  // Restrict this Keybinding to gamemaster only?
+    reservedModifiers: [],
+    precedence: CONST.KEYBINDING_PRECEDENCE.NORMAL
+  });  
+  
 });
 
 console.log("FitDRoller | Forged in the Dark Dice Roller loaded");
