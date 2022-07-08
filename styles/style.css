@@ -318,7 +318,7 @@
 }
 
 .rollButton:hover:after {
-  content: "Roll";
+  content: attr(data-text);
   line-height: 25px;
   padding: 0px;
   font-size:smaller;

@@ -68,5 +68,7 @@
   
   
   "FitDRoller.FitDRollerShortcutName": " Forged in the Dark Roller",
-  "FitDRoller.FitDRollerShortcutHint": "This will trigger Forged in the Dark Roller."    
+  "FitDRoller.FitDRollerShortcutHint": "This will trigger Forged in the Dark Roller.",    
+  
+  "FitDRoller.FitDRollerRollOverText": "Roll"    
 }

@@ -3,7 +3,7 @@
   "title": "Forged in the Dark - Roller",
   "description": "Provides a generic Dice Roller for Forged in the Dark games",
   "authors": ["Mestre Digital", "Gus"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "10",
 

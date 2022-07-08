@@ -6,15 +6,18 @@ export default class Roller {
 
   constructor() {
     this.moduleName = "fitd-roller-alt";
+    this.instance;
   }
 
   async FitDRollerPopup() {
-    const maxDice = game.settings.get(this.moduleName, "maxDiceCount");
-    const defaultDice = game.settings.get(this.moduleName, "defaultDiceCount") + 1;
+    // ---------------------------------------
+    if (!this.instance) { // no instance
+      const maxDice = game.settings.get(this.moduleName, "maxDiceCount");
+      const defaultDice = game.settings.get(this.moduleName, "defaultDiceCount") + 1;
 
-    const htmlDialog = await renderTemplate("modules/" + this.moduleName + "/templates/roll-dialog.html", {});    
-  
-    new Dialog({
+      const htmlDialog = await renderTemplate("modules/" + this.moduleName + "/templates/roll-dialog.html", {});    
+
+      this.instance = new Dialog({
       title: `${game.i18n.localize('FitDRoller.RollTitle')}`,
       content: htmlDialog,
       buttons: {},
@@ -93,11 +96,19 @@ export default class Roller {
           }
 
           await this.FitDRoller("", numberOfDice, position, effect);          
-        })
-
-      // render end       
-      } 
+        })      
+      } // render end        
     }).render(true);
+
+    } else {
+      if(this.instance.rendered) {
+        this.instance.close()
+      } else {
+        this.instance.render(true, { focus:true });
+      }
+    }
+    // ---------------------------------------
+
   }
 
   /**

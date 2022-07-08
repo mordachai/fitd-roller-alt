@@ -68,5 +68,7 @@
   "FitDRoller.backgroundColorBlack": "preto",
   
   "FitDRoller.FitDRollerShortcutName": "Painel de Rolagem: Forged in the Dark",
-  "FitDRoller.FitDRollerShortcutHint": "Mostra o painel de rolagem dedicado aos sistemas Forged in the Dark"    
+  "FitDRoller.FitDRollerShortcutHint": "Mostra o painel de rolagem dedicado aos sistemas Forged in the Dark",
+
+  "FitDRoller.FitDRollerRollOverText": "Rola"      
 }

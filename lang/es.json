@@ -59,5 +59,7 @@
   "FitDRoller.backgroundColorBlack": "negro",
   
   "FitDRoller.FitDRollerShortcutName": "Tirador de Dados Forged in the Dark",
-  "FitDRoller.FitDRollerShortcutHint": "Esto activará la tirada de dados para Forged in the Dark"    
+  "FitDRoller.FitDRollerShortcutHint": "Esto activará la tirada de dados para Forged in the Dark",
+
+  "FitDRoller.FitDRollerRollOverText": "Roll"      
 }
